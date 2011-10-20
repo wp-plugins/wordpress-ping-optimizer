@@ -1,4 +1,4 @@
-=== cbnet Ping Optimizer ===
+=== WordPress Ping Optimizer ===
 Contributors: Pankaj Jha
 Plugin Site: http://onlinewebapplication.com/
 Tags: WordPress Ping Optimizer, Ping Optimizer
