@@ -1,6 +1,7 @@
 === WordPress Ping Optimizer ===
 Contributors: Pankaj Jha
 Plugin Site: http://onlinewebapplication.com/
+Donate link: http://onlinewebapplication.com/onlinewebapplication-com-donation/
 Tags: WordPress Ping Optimizer, Ping Optimizer
 Requires at least: 2.9
 Tested up to: 3.2
