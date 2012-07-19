@@ -27,6 +27,10 @@ Save your blog from getting tagged as ping spammer by installing this plugin.
 
 * When you post a future post by editing the time stamp, it will ping only when your post appears in future. It won't unnecessarily ping many times when you schedule posts as WordPress does by default.
 
+* Works on all modern browsers.
+* Work With all the cache plugins.
+* Simple configuration.
+
 == Installation ==
 
 Manual installation:
@@ -45,6 +49,9 @@ Activiation and Use
 1. Activate the plugin through the 'Plugins' menu in WordPress
 2. From your Admin UI (Dashboard), use the menu to select Options -> WordPress Ping Optimizer 
 3. Configure settings, and save
+
+= More Information =   
+[WordPress Ping Optimizer](http://onlinewebapplication.com/2011/10/wordpress-ping-optimizer.html)
 
 == Frequently Asked Questions ==
 
