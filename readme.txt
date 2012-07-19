@@ -3,9 +3,9 @@ Contributors: Pankaj Jha
 Plugin Site: http://onlinewebapplication.com/
 Donate link: http://onlinewebapplication.com/onlinewebapplication-com-donation/
 Tags: WordPress Ping Optimizer, Ping Optimizer
-Requires at least: 2.9
-Tested up to: 3.2
-Stable tag: 2.0.0
+Requires at least: 3.0
+Tested up to: 3.4.1
+Stable tag: 3.0
 
 Save your wordpress blog from getting tagged as ping spammer. This plugin is a fork of the cbnet Ping Optimizer plugin.
 
@@ -68,7 +68,7 @@ You can Check Screen Shots on my website :<br />
 = 2.2 =
 * Bug Fixed [Crashes Site after log out](http://wordpress.org/support/topic/plugin-wordpress-ping-optimizer-crashes-site-after-log-out).
 = 2.1 =
-* Increase ping limitations
+* Compatible with 3.4.1
 
 
 
