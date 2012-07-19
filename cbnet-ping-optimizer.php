@@ -171,7 +171,7 @@ class cbnetPingOptimizer
 	 * Adds "Settings" link to Plugin Action links on Manage Plugins page
 	 */
 	function cbnetpo_actlinks( $links ) {
-		$cbnetpo_settings_link = '<a href="options-general.php?page=wordpress_ping-optimizer/cbnet-ping-optimizer.php">Settings</a>'; 
+		$cbnetpo_settings_link = '<a href="options-general.php?page=wordpress-ping-optimizer/cbnet-ping-optimizer.php">Settings</a>'; 
 		$links[] = $cbnetpo_settings_link;
 		return $links; 
 	}
