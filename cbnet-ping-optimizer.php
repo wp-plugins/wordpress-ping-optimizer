@@ -6,7 +6,6 @@
  * Version:       2.2
  * Author:        Pankaj Jha
  * Author URI:    http://onlinewebapplication.com/
- *
  * License:       GNU General Public License, v2 (or newer)
  * License URI:  http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  *
