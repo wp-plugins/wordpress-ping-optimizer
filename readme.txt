@@ -64,4 +64,11 @@ You can Check Screen Shots on my website :<br />
 You can Check Screen Shots on my website :<br />
 [WordPress Ping Optimizer](http://onlinewebapplication.com/2011/10/wordpress-ping-optimizer.html)<br />
 
+== Changelog ==
+= 2.2 =
+* Bug Fixed [Crashes Site after log out](http://wordpress.org/support/topic/plugin-wordpress-ping-optimizer-crashes-site-after-log-out).
+= 2.1 =
+* Increase ping limitations
+
+
 
