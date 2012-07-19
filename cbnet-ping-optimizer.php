@@ -617,6 +617,3 @@ class cbnetPingOptimizer
 $cbnetPingOptimizer = new cbnetPingOptimizer();
 ?>
 
- <div id="sideblock" style="float:right;width:270px;margin-left:10px;"> 
-		 <iframe width=270 height=500 frameborder="0" src="http://demos.onlinewebapplication.com/wp-internal-links/SEOIinternalLinks.html"></iframe>
- </div>
