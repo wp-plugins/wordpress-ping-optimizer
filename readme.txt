@@ -2,7 +2,7 @@
 Contributors: Pankaj Jha
 Plugin Site: http://onlinewebapplication.com/
 Donate link: http://onlinewebapplication.com/onlinewebapplication-com-donation/
-Tags: WordPress Ping Optimizer, Ping Optimizer
+Tags: WordPress Ping Optimizer, Ping Optimizer, Ping Fix, Future Ping, Smart  Ping
 Requires at least: 3.0
 Tested up to: 3.4.1
 Stable tag: 3.0

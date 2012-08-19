@@ -4,8 +4,8 @@
  * Plugin URI:    http://onlinewebapplication.com/2011/10/wordpress-ping-optimizer.html
  * Description:   Saves your wordpress blog from getting tagged as ping spammer. (Note: This plugin is a fork of the cbnet Ping Optimizer plugin.)
  * Version:       2.3
- * Author:        Pankaj Jha
- * Author URI:    http://profiles.wordpress.org/masdiblogs
+ * Author:        masdiblogs
+ * Author URI:    http://onlinewebapplication.com/
  * License:       GNU General Public License, v2 (or newer)
  * License URI:  http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  *
