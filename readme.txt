@@ -1,5 +1,5 @@
 === WordPress Ping Optimizer ===
-Contributors: Pankaj Jha
+Contributors: masdiblogs
 Plugin Site: http://onlinewebapplication.com/
 Donate link: http://onlinewebapplication.com/onlinewebapplication-com-donation/
 Tags: WordPress Ping Optimizer, Ping Optimizer, Ping Fix, Future Ping, Smart  Ping
