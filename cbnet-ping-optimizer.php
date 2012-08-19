@@ -3,9 +3,9 @@
  * Plugin Name:   WordPress Ping Optimizer
  * Plugin URI:    http://onlinewebapplication.com/2011/10/wordpress-ping-optimizer.html
  * Description:   Saves your wordpress blog from getting tagged as ping spammer. (Note: This plugin is a fork of the cbnet Ping Optimizer plugin.)
- * Version:       2.2
+ * Version:       2.3
  * Author:        Pankaj Jha
- * Author URI:    http://onlinewebapplication.com/
+ * Author URI:    http://profiles.wordpress.org/masdiblogs
  * License:       GNU General Public License, v2 (or newer)
  * License URI:  http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  *
@@ -24,7 +24,7 @@
  */
 
 define('cbnetpo_NAME', 'WordPress ping Optimizer');	// Name of the Plugin
-define('cbnetpo_VERSION', '2.2');					// Current version of the Plugin
+define('cbnetpo_VERSION', '2.3');					// Current version of the Plugin
 define("cbnetpo_LOG", true);							// Set to 'true' to keep log, else 'false'.
 
 /**
@@ -46,13 +46,14 @@ class cbnetPingOptimizer
 	var $cbnetpo_pinglog_tbl = 'cbnetpo_ping_optimizer'; // Ping log table
     // Pinging action/type
 	var $cbnetpo_type =  array(1 => 'none', 2 => 'new', 3 => 'future', 4 => 'forced', 5 => 'edited', 6 => 'disabled', 7 => 'noservices', 8 => 'excessive');
-	
+	//Variable cbnetpo_request
+	var $cbnetpo_request;	// Request Type Fixed  error
 	/**
 	 * Constructor. Add cbnet Ping Optimizer plugin actions/filters and gets the user defined options.
 	 * Also removes the default WordPress pinging services.
 	 */
 	function cbnetPingOptimizer() {
-		global $wp_version, $table_prefix;
+		global $wp_version, $table_prefix, $post_title, $post_type;
 		$this->cbnetpo_pinglog_tbl = $table_prefix.$this->cbnetpo_pinglog_tbl;
 		$this->cbnetpo_siteurl    = get_bloginfo('wpurl');
 		$this->cbnetpo_siteurl    = (strpos($this->cbnetpo_siteurl,'http://') === false) ? get_bloginfo('siteurl') : $this->cbnetpo_siteurl;
@@ -84,7 +85,7 @@ class cbnetPingOptimizer
 		$this->cbnetpo_ping_option  = get_option('cbnetpo_ping_optimizer');
 		$this->cbnetpo_future_pings = get_option('cbnetpo_future_pings');
 		$this->cbnetpo_options       = get_option('cbnetpo_options');
-		if ( $this->cbnetpo_wp_version < 2.3 ) {
+		if ( $this->cbnetpo_wp_version < 2.4 ) {
 			if( !is_array($this->cbnetpo_future_pings) ) {
 				$this->cbnetpo_future_pings = array();
 			}
@@ -120,7 +121,7 @@ class cbnetPingOptimizer
 		$default_options = array('cbnetpo_version' => cbnetpo_VERSION, 'limit_ping' => 0, 'limit_number' => 1, 'limit_time' => 15);
 		add_option('cbnetpo_options', $default_options);
 		add_option('cbnetpo_ping_optimizer', 1, 'WordPress Ping Optimizer plugin options', 'no');
-		if ( $this->cbnetpo_wp_version < 2.3 ) {
+		if ( $this->cbnetpo_wp_version < 2.4 ) {
 			add_option('cbnetpo_future_ping_time', date('Y-m-d-H-i-s'), 'WordPress Ping Optimizer plugin options', 'no');
 		}
 		$this->cbnetpoCreateLogTable();
@@ -145,7 +146,7 @@ class cbnetPingOptimizer
 		if ( $wpdb->get_var("show tables like '$this->cbnetpo_pinglog_tbl'") != $this->cbnetpo_pinglog_tbl ) {
 			if ( file_exists(ABSPATH . 'wp-admin/includes/upgrade.php') ) {
 				require_once( ABSPATH . '/wp-admin/includes/upgrade.php' );
-			} else { // Wordpress <= 2.3
+			} else { // Wordpress <= 2.4
 				require_once(ABSPATH . 'wp-admin/upgrade-functions.php');
 			}
 			dbDelta("CREATE TABLE `{$this->cbnetpo_pinglog_tbl}` (
@@ -195,12 +196,14 @@ class cbnetPingOptimizer
 	 * Carries out all the operations in options page
 	 */
 	function cbnetpoOptionsPg() {
-		global $wpdb;
-		$this->cbnetpo_request = $_REQUEST['cbnetpo'];
+		global $wpdb, $msg;
+		if (isset($_REQUEST['cbnetpo'])) {
+		    $this->cbnetpo_request = $_REQUEST['cbnetpo'];
+		}
 		$msg ='';
 		
 			if ( $this->cbnetpo_request['pingnow'] ) {
-				if ( $this->cbnetpo_wp_version >= 2.3 ) {
+				if ( $this->cbnetpo_wp_version >= 2.4 ) {
 					if ( $this->cbnetpo_ping_sites == "" ) { 
 						$this->cbnetpoLog("NOT Pinging (no ping sites in services lists)", 7);
 					} else if ( $this->cbnetpo_ping_option != 1 ) {
@@ -223,7 +226,7 @@ class cbnetPingOptimizer
 				$this->cbnetpo_options = array('limit_ping' => $this->cbnetpo_request['limit_ping'], 'limit_number' => $this->cbnetpo_request['limit_number'], 'limit_time' => $this->cbnetpo_request['limit_time']);
 				update_option('cbnetpo_options', $this->cbnetpo_options);
 				$msg = 'Options saved.';
-			} else if ( $_GET['d'] == 'yes' ) {
+			} else if ( isset($_GET['d']) && $_GET['d'] == 'yes' ) {
 				$wpdb->query("DELETE FROM $this->cbnetpo_pinglog_tbl");
 				$msg = 'Ping Log Deleted.';
 			}
@@ -311,7 +314,7 @@ class cbnetPingOptimizer
 			$this->_post_url = '';
 		}
 
-		if ( $this->cbnetpo_wp_version >= 2.3 ) {
+		if ( $this->cbnetpo_wp_version >= 2.4 ) {
 			// Do pingbacks
 			while ($ping = $wpdb->get_row("SELECT * FROM {$wpdb->posts}, {$wpdb->postmeta} WHERE {$wpdb->posts}.ID = {$wpdb->postmeta}.post_id AND {$wpdb->postmeta}.meta_key = '_pingme' LIMIT 1")) {
 				$wpdb->query("DELETE FROM {$wpdb->postmeta} WHERE post_id = {$ping->ID} AND meta_key = '_pingme';");
@@ -400,7 +403,7 @@ class cbnetPingOptimizer
 					// if post_date is greater than current time/date then its a future post (don't ping it)			
 					if ( ($row['post_date'] > current_time('mysql')) ) {
 						if ( $this->excessive_pinging != 1 ) {
-							if ( $this->cbnetpo_wp_version >= 2.3 ) {
+							if ( $this->cbnetpo_wp_version >= 2.4 ) {
 								// schedule ping for future post
 								wp_schedule_single_event(strtotime($row['post_date_gmt'].' GMT'), 'cbnetpo_ping', array($post_id_title,3));
 							} else {
@@ -415,7 +418,7 @@ class cbnetPingOptimizer
 						}		
 					} else if ( ($this->cbnetpo_pvt_to_pub == 1 || $row["post_status"] == 'publish') && $this->cbnetpo_post_title != '' ) {	
 						if ( $this->excessive_pinging != 1 ) {
-							if ( $this->cbnetpo_wp_version >= 2.3 ) {
+							if ( $this->cbnetpo_wp_version >= 2.4 ) {
 								// schedule ping for new post
 								wp_schedule_single_event(time(), 'cbnetpo_ping', array($post_id_title,2));
 							} else {
@@ -456,13 +459,13 @@ class cbnetPingOptimizer
 	
 	/**
 	 * Checks if time elasped for future post, and if so, removes post form the ping list and pings
-	 * For wordpress versions below 2.3
+	 * For wordpress versions below 2.4
 	 */
 	function cbnetpoFuturePing() {
 		global $wpdb;
 		
 		// future ping list is empty
-		if ( count($this->cbnetpo_future_pings) <= 0 || $this->cbnetpo_wp_version >= 2.3) {
+		if ( count($this->cbnetpo_future_pings) <= 0 || $this->cbnetpo_wp_version >= 2.4) {
 			return true;
 		}
 		$maxbpddc_data_recent = $this->cbnetpo_future_ping_time;
@@ -510,7 +513,7 @@ class cbnetPingOptimizer
 	 */
 	function cbnetpoFuturePingDelete($id) { 
 		global $wpdb;
-		if ( $this->cbnetpo_wp_version >= 2.3 ) {
+		if ( $this->cbnetpo_wp_version >= 2.4 ) {
 			$row = $wpdb->get_row("SELECT ID,post_date_gmt,post_title FROM $wpdb->posts WHERE id=$id", ARRAY_A);	
 			$post_id_title = $row['ID'].'~#'.$row['post_title'];
 			wp_unschedule_event(strtotime($row['post_date_gmt'].' GMT'), 'cbnetpo_ping', array($post_id_title,2));
@@ -544,7 +547,7 @@ class cbnetPingOptimizer
 	 * @return string
 	 */
 	function cbnetpoGetLogData() {
-		global $wpdb;
+		global $wpdb, $msg;
 		$query = "SELECT * FROM $this->cbnetpo_pinglog_tbl ORDER BY date_time DESC";
 		$results = $wpdb->get_results($query,'ARRAY_A');
 		$noof_records = count($results);
@@ -564,7 +567,7 @@ class cbnetPingOptimizer
 			$exists = 1;
 			$ping_data = array();
 			foreach ( (array) $results as $key => $details ) {
-				$ping_data[$details[date_time]][] = array($details['post_title'],$details['log_data'],$details['type']);
+				$ping_data[$details['date_time']][] = array($details['post_title'],$details['log_data'],$details['type']);
 			}
 			$count = 0;
 			foreach ( (array) $ping_data as $ping_date => $_ping_data_arr ) {
