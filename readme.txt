@@ -4,22 +4,18 @@ Plugin Site: http://onlinewebapplication.com/
 Donate link: http://onlinewebapplication.com/onlinewebapplication-com-donation/
 Tags: WordPress Ping Optimizer, Ping Optimizer, Ping Fix, Future Ping, Smart  Ping
 Requires at least: 3.0
-Tested up to: 3.4.1
-Stable tag: 3.0
+Tested up to: 3.4.2
+Stable tag: 2.3
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Save your wordpress blog from getting tagged as ping spammer. This plugin is a fork of the cbnet Ping Optimizer plugin.
-
 == Description ==
-<br />
-[Author Site](http://onlinewebapplication.com)|
-[Plugin Home Page](http://onlinewebapplication.com/2011/10/wordpress-ping-optimizer.html)
-<br />
-<br />
 Do you know your WordPress blog pings unnecessarily every time you edit a post? Think how many times you click on "Save and Continue Editing" or "Save" button. Your blog will ping unnecessarily that many times you click on those buttons.
 
-Save your blog from getting tagged as ping spammer by installing this plugin.
+Save your blog from getting tagged as ping spammer by installing this  [plugin](http://onlinewebapplication.com/2011/10/wordpress-ping-optimizer.html).
 
-**After you install Wordpress Ping Optimizer:**
+**After you install [Wordpress Ping Optimizer](http://onlinewebapplication.com/2011/10/wordpress-ping-optimizer.html):**
 
 * When you create a new post, your blog will ping and notify all the ping services that it has been updated. This encourages search engines and different blog directories/services to index your updated blog properly.
 
@@ -30,6 +26,11 @@ Save your blog from getting tagged as ping spammer by installing this plugin.
 * Works on all modern browsers.
 * Work With all the cache plugins.
 * Simple configuration.
+<br />
+[Author Site](http://onlinewebapplication.com)|
+[Plugin Home Page](http://onlinewebapplication.com/2011/10/wordpress-ping-optimizer.html)
+<br />
+<br />
 
 == Installation ==
 
@@ -55,22 +56,28 @@ Activiation and Use
 
 == Frequently Asked Questions ==
 
-You can Check Screen Shots on my website :<br />
+You can check more FAQ on plugin website URL :<br />
 [WordPress Ping Optimizer](http://onlinewebapplication.com/2011/10/wordpress-ping-optimizer.html)<br />
 
 
 == Screenshots ==
 
-You can Check Screen Shots on my website :<br />
+You can check Screen Shots on plugin website URL :<br />
 [WordPress Ping Optimizer](http://onlinewebapplication.com/2011/10/wordpress-ping-optimizer.html)<br />
 
 == Changelog ==
+= 2.31 =
+* Compatible with wordpress 3.4.2
 = 2.3 =
 * Bug Fixed [You do not have sufficient permissions to access this page](http://wordpress.org/support/topic/plugin-wordpress-ping-optimizer-you-do-not-have-sufficient-permissions-to-access-this-page).
 = 2.2 =
 * Bug Fixed [Crashes Site after log out](http://wordpress.org/support/topic/plugin-wordpress-ping-optimizer-crashes-site-after-log-out).
 = 2.1 =
 * Compatible with 3.4.1
+
+== Upgrade Notice ==
+= 2.31 =
+Compatible with wordpress 3.4.2
 
 
 
