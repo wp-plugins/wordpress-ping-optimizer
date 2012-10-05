@@ -1,7 +1,7 @@
 <?php
 /* 
  * Plugin Name:   WordPress Ping Optimizer
- * Plugin URI:    http://onlinewebapplication.com/2011/10/wordpress-ping-optimizer.html
+ * Plugin URI:    http://onlinewebapplication.com/wordpress-ping-optimizer/
  * Description:   Saves your wordpress blog from getting tagged as ping spammer. (Note: This plugin is a fork of the cbnet Ping Optimizer plugin.)
  * Version:       2.31
  * Author:        masdiblogs

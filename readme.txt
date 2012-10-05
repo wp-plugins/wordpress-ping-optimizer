@@ -13,9 +13,9 @@ Save your wordpress blog from getting tagged as ping spammer. This plugin is a f
 == Description ==
 Do you know your WordPress blog pings unnecessarily every time you edit a post? Think how many times you click on "Save and Continue Editing" or "Save" button. Your blog will ping unnecessarily that many times you click on those buttons.
 
-Save your blog from getting tagged as ping spammer by installing this  [plugin](http://onlinewebapplication.com/2011/10/wordpress-ping-optimizer.html).
+Save your blog from getting tagged as ping spammer by installing this  [plugin](http://onlinewebapplication.com/wordpress-ping-optimizer/).
 
-**After you install [Wordpress Ping Optimizer](http://onlinewebapplication.com/2011/10/wordpress-ping-optimizer.html):**
+**After you install [Wordpress Ping Optimizer](http://onlinewebapplication.com/wordpress-ping-optimizer/):**
 
 * When you create a new post, your blog will ping and notify all the ping services that it has been updated. This encourages search engines and different blog directories/services to index your updated blog properly.
 
@@ -28,7 +28,7 @@ Save your blog from getting tagged as ping spammer by installing this  [plugin](
 * Simple configuration.
 <br />
 [Author Site](http://onlinewebapplication.com)|
-[Plugin Home Page](http://onlinewebapplication.com/2011/10/wordpress-ping-optimizer.html)
+[Plugin Home Page](http://onlinewebapplication.com/wordpress-ping-optimizer/)
 <br />
 <br />
 
@@ -52,18 +52,18 @@ Activiation and Use
 3. Configure settings, and save
 
 = More Information =   
-[WordPress Ping Optimizer](http://onlinewebapplication.com/2011/10/wordpress-ping-optimizer.html)
+[WordPress Ping Optimizer](http://onlinewebapplication.com/wordpress-ping-optimizer/)
 
 == Frequently Asked Questions ==
 
 You can check more FAQ on plugin website URL :<br />
-[WordPress Ping Optimizer](http://onlinewebapplication.com/2011/10/wordpress-ping-optimizer.html)<br />
+[WordPress Ping Optimizer](http://onlinewebapplication.com/wordpress-ping-optimizer/)<br />
 
 
 == Screenshots ==
 
 You can check Screen Shots on plugin website URL :<br />
-[WordPress Ping Optimizer](http://onlinewebapplication.com/2011/10/wordpress-ping-optimizer.html)<br />
+[WordPress Ping Optimizer](http://onlinewebapplication.com/wordpress-ping-optimizer/)<br />
 
 == Changelog ==
 = 2.31 =
