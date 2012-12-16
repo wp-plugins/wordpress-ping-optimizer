@@ -2,10 +2,10 @@
 Contributors: masdiblogs
 Plugin Site: http://onlinewebapplication.com/
 Donate link: http://onlinewebapplication.com/onlinewebapplication-com-donation/
-Tags: WordPress Ping Optimizer, Ping Optimizer, Ping Fix, Future Ping, Smart  Ping
+Tags: WordPress Ping Optimizer, Ping Optimizer, Ping Fix, Future Ping, Smart  Ping, Ping, promotion, Ping Service
 Requires at least: 3.0
-Tested up to: 3.4.2
-Stable tag: 2.3
+Tested up to: 3.5
+Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,6 +14,7 @@ Save your wordpress blog from getting tagged as ping spammer. This plugin is a f
 Do you know your WordPress blog pings unnecessarily every time you edit a post? Think how many times you click on "Save and Continue Editing" or "Save" button. Your blog will ping unnecessarily that many times you click on those buttons.
 
 Save your blog from getting tagged as ping spammer by installing this  [plugin](http://onlinewebapplication.com/wordpress-ping-optimizer/).
+The list of ping service you can use for the better performance find [here](http://onlinewebapplication.com/wordpress-ping-optimizer/#comment-38368).
 
 **After you install [Wordpress Ping Optimizer](http://onlinewebapplication.com/wordpress-ping-optimizer/):**
 
@@ -66,6 +67,9 @@ You can check Screen Shots on plugin website URL :<br />
 [WordPress Ping Optimizer](http://onlinewebapplication.com/wordpress-ping-optimizer/)<br />
 
 == Changelog ==
+= 2.32 =
+* Compatible with wordpress 3.5. Check more details [here](http://onlinewebapplication.com/wordpress-ping-optimizer/).
+
 = 2.31 =
 * Compatible with wordpress 3.4.2
 = 2.3 =
@@ -76,6 +80,9 @@ You can check Screen Shots on plugin website URL :<br />
 * Compatible with 3.4.1
 
 == Upgrade Notice ==
+= 2.32 =
+Compatible with wordpress 3.5
+
 = 2.31 =
 Compatible with wordpress 3.4.2
 
