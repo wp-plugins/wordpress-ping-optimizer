@@ -68,7 +68,7 @@ You can check Screen Shots on plugin website URL :<br />
 
 == Changelog ==
 = 2.33 =
-* Compatible with wordpress 3.5.1
+* Compatible with wordpress 3.5.1 Check more details [here](http://onlinewebapplication.com/wordpress-ping-optimizer/).
 
 = 2.32 =
 * Compatible with wordpress 3.5. Check more details [here](http://onlinewebapplication.com/wordpress-ping-optimizer/).
