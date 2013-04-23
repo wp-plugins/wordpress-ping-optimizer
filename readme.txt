@@ -67,6 +67,11 @@ You can check Screen Shots on plugin website URL :<br />
 [WordPress Ping Optimizer](http://onlinewebapplication.com/wordpress-ping-optimizer/)<br />
 
 == Changelog ==
+= 2.34 =
+* [Bug fixed](http://onlinewebapplication.com/wordpress-ping-optimizer/#comment-42257)
+1. WP pinging all the time
+2. Duplicate results in log
+
 = 2.33 =
 * Compatible with wordpress 3.5.1 Check more details [here](http://onlinewebapplication.com/wordpress-ping-optimizer/).
 
@@ -83,6 +88,10 @@ You can check Screen Shots on plugin website URL :<br />
 * Compatible with 3.4.1
 
 == Upgrade Notice ==
+= 2.34 =
+Bug fixed 
+1. WP pinging all the time
+2. Duplicate results in log
 = 2.33 =
 Compatible with wordpress 3.5.1
 

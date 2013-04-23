@@ -18,6 +18,7 @@ function cbnetpoShowHide(Div,Img) {
  <p>The following services will automatically be pinged when you publish new posts or drafts.  
  <strong>Not</strong> when you publish future posts or edit previously published posts, as WordPress does by default.</p>
  <p><strong>NB:</strong> This list is synchronized with the <a href="options-writing.php" target="_blank">original update services list</a>.</p>
+<p>Visit to <a href="http://onlinewebapplication.com/wordpress-ping-optimizer/" target="_blank">WordPress Ping Optimizer</a> plugin official home page for know about the list of ping service you can use or any FAQ</p>
  <form method="post">
  <p><?php _e('Separate multiple service URIs with line breaks:', 'cbnetpo'); ?><br />
  <textarea name="cbnetpo[uris]" cols="60" rows="10"><?php echo $this->cbnetpo_ping_sites;?></textarea></p>
