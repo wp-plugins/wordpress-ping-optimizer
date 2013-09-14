@@ -67,6 +67,9 @@ You can check Screen Shots on plugin website URL :<br />
 [WordPress Ping Optimizer](http://onlinewebapplication.com/wordpress-ping-optimizer/)<br />
 
 == Changelog ==
+= 2.34.2 =
+* Compatible with wordpress 3.6.1 Check more details [here](http://onlinewebapplication.com/wordpress-ping-optimizer/).
+
 = 2.34.1 =
 * Compatible with wordpress 3.6. Check more details [here](http://onlinewebapplication.com/wordpress-ping-optimizer/).
 
@@ -92,6 +95,9 @@ You can check Screen Shots on plugin website URL :<br />
 * Compatible with 3.4.1
 
 == Upgrade Notice ==
+= 2.34.2 =
+Compatible with wordpress 3.6.1
+
 = 2.34.1 =
 Compatible with wordpress 3.6
 
