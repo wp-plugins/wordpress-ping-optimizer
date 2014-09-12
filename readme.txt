@@ -4,7 +4,7 @@ Plugin Site: http://onlinewebapplication.com/
 Donate link: http://onlinewebapplication.com/onlinewebapplication-com-donation/
 Tags: WordPress Ping Optimizer, Ping Optimizer, Ping Fix, Future Ping, Smart  Ping, Ping, promotion, Ping Service
 Requires at least: 3.0
-Tested up to: 3.9
+Tested up to: 4.0
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -67,17 +67,20 @@ You can check Screen Shots on plugin website URL :<br />
 [WordPress Ping Optimizer](http://onlinewebapplication.com/wordpress-ping-optimizer/)<br />
 
 == Changelog ==
+= 2.34.5 =
+* Compatible with wordpress 4.0 Check more details [here](http://onlinewebapplication.com/wordpress-ping-optimizer/).
+
 = 2.34.4 =
-* Compatible with wordpress 3.9 Check more details [here](http://onlinewebapplication.com/wordpress-ping-optimizer/).
+* Compatible with wordpress 3.9 
 
 = 2.34.3 =
-* Compatible with wordpress 3.8 Check more details [here](http://onlinewebapplication.com/wordpress-ping-optimizer/).
+* Compatible with wordpress 3.8 
 
 = 2.34.2 =
-* Compatible with wordpress 3.6.1 Check more details [here](http://onlinewebapplication.com/wordpress-ping-optimizer/).
+* Compatible with wordpress 3.6.1 
 
 = 2.34.1 =
-* Compatible with wordpress 3.6. Check more details [here](http://onlinewebapplication.com/wordpress-ping-optimizer/).
+* Compatible with wordpress 3.6. 
 
 = 2.34 =
 * Minor Release to fix the below bug -
@@ -86,21 +89,27 @@ You can check Screen Shots on plugin website URL :<br />
 [See more details here](http://onlinewebapplication.com/wordpress-ping-optimizer/)
 
 = 2.33 =
-* Compatible with wordpress 3.5.1 Check more details [here](http://onlinewebapplication.com/wordpress-ping-optimizer/).
+* Compatible with wordpress 3.5.1 
 
 = 2.32 =
-* Compatible with wordpress 3.5. Check more details [here](http://onlinewebapplication.com/wordpress-ping-optimizer/).
+* Compatible with wordpress 3.5. 
 
 = 2.31 =
 * Compatible with wordpress 3.4.2
+
 = 2.3 =
 * Bug Fixed [You do not have sufficient permissions to access this page](http://wordpress.org/support/topic/plugin-wordpress-ping-optimizer-you-do-not-have-sufficient-permissions-to-access-this-page).
+
 = 2.2 =
 * Bug Fixed [Crashes Site after log out](http://wordpress.org/support/topic/plugin-wordpress-ping-optimizer-crashes-site-after-log-out).
+
 = 2.1 =
 * Compatible with 3.4.1
 
 == Upgrade Notice ==
+= 2.34.5 =
+Compatible with wordpress 4.0
+
 = 2.34.4 =
 Compatible with wordpress 3.9
 

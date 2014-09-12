@@ -3,7 +3,7 @@
  * Plugin Name:   WordPress Ping Optimizer
  * Plugin URI:    http://onlinewebapplication.com/wordpress-ping-optimizer/
  * Description:   Saves your wordpress blog from getting tagged as ping spammer. (Note: This plugin is a fork of the cbnet Ping Optimizer plugin.)
- * Version:       2.34.4
+ * Version:       2.34.5
  * Author:        Pankaj Jha
  * Author URI:    http://onlinewebapplication.com/
  * License:       GNU General Public License, v2 (or newer)
@@ -118,6 +118,9 @@ class cbnetPingOptimizer
 	/**
 	 * Called when plugin is activated. Adds option_value to the options table.
 	 */
+/**
+*Compatible with wordpress 4.0
+*/
 	function cbnetpoActivate() {
 		$default_options = array('cbnetpo_version' => cbnetpo_VERSION, 'limit_ping' => 0, 'limit_number' => 1, 'limit_time' => 15);
 		add_option('cbnetpo_options', $default_options);
