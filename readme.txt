@@ -4,7 +4,7 @@ Plugin Site: http://onlinewebapplication.com/
 Donate link: http://onlinewebapplication.com/onlinewebapplication-com-donation/
 Tags: WordPress Ping Optimizer, Ping Optimizer, Ping Fix, Future Ping, Smart  Ping, Ping, promotion, Ping Service
 Requires at least: 3.0
-Tested up to: 4.0
+Tested up to: 4.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -67,8 +67,11 @@ You can check Screen Shots on plugin website URL :<br />
 [WordPress Ping Optimizer](http://onlinewebapplication.com/wordpress-ping-optimizer/)<br />
 
 == Changelog ==
+= 2.34.6 =
+* Compatible with wordpress 4.1 Check more details [here](http://onlinewebapplication.com/wordpress-ping-optimizer/).
+
 = 2.34.5 =
-* Compatible with wordpress 4.0 Check more details [here](http://onlinewebapplication.com/wordpress-ping-optimizer/).
+* Compatible with wordpress 4.0
 
 = 2.34.4 =
 * Compatible with wordpress 3.9 
@@ -107,6 +110,9 @@ You can check Screen Shots on plugin website URL :<br />
 * Compatible with 3.4.1
 
 == Upgrade Notice ==
+= 2.34.6 =
+Compatible with wordpress 4.1
+
 = 2.34.5 =
 Compatible with wordpress 4.0
 
