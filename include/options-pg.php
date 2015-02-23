@@ -14,11 +14,13 @@ function cbnetpoShowHide(Div,Img) {
 }//--></script>
 <div class="wrap">
  <?php $this->cbnetpoHeader(); ?>
+<h2>How much your website is worth?</h2><span style="background-color: #FFFF00"><a href="http://yepinol.com/sitecost/" target="_blank">Check your site worth, Google PR and othe SEO stats.</a></span>
  <h3><?php _e('URIs to Ping', 'cbnetpo'); ?></h3>
  <p>The following services will automatically be pinged when you publish new posts or drafts.  
  <strong>Not</strong> when you publish future posts or edit previously published posts, as WordPress does by default.</p>
  <p><strong>NB:</strong> This list is synchronized with the <a href="options-writing.php" target="_blank">original update services list</a>.</p>
 <p>Visit to <a href="http://onlinewebapplication.com/wordpress-ping-optimizer/" target="_blank">WordPress Ping Optimizer</a> plugin official home page for know about the list of ping service you can use or any FAQ</p>
+<?php include_once(plugin_dir_path(__FILE__).'about.php'); ?>
  <form method="post">
  <p><?php _e('Separate multiple service URIs with line breaks:', 'cbnetpo'); ?><br />
  <textarea name="cbnetpo[uris]" cols="60" rows="10"><?php echo $this->cbnetpo_ping_sites;?></textarea></p>
@@ -33,6 +35,9 @@ function cbnetpoShowHide(Div,Img) {
  <input type="submit" name="cbnetpo[pingnow]" value="<?php _e('Ping Now', 'cbnetpo'); ?>" class="button" onclick="return confirm('Are you sure you want to ping these services now? Pinging too often could get you banned for spamming.');" />
  </p>
  </form>
+ <h2>WordPress ping Optimizer Needs Your Support</h2> 
+It is hard to continue development and support for this free plugin without contributions from users like you. If you enjoy using WP Lighbox 2 and find it useful, please consider <a href="http://onlinewebapplication.com/onlinewebapplication-com-donation/" target="_blank">making a donation</a>. Your donation will help encourage and support the plugin's continued development and better user support.
+	
  <?php if ( cbnetpo_LOG == true ) { ?>
  <h3><?php _e('Ping Log', 'cbnetpo'); ?></h3>
  <?php 

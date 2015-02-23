@@ -3,7 +3,7 @@
  * Plugin Name:   WordPress Ping Optimizer
  * Plugin URI:    http://onlinewebapplication.com/wordpress-ping-optimizer/
  * Description:   Saves your wordpress blog from getting tagged as ping spammer. (Note: This plugin is a fork of the cbnet Ping Optimizer plugin.)
- * Version:       2.34.6
+ * Version:       2.34.7
  * Author:        Pankaj Jha
  * Author URI:    http://onlinewebapplication.com/
  * License:       GNU General Public License, v2 (or newer)
@@ -367,6 +367,7 @@ class cbnetPingOptimizer
 		// when set to true, this outputs debug messages by itself
 		$client->debug = false;
 		$home = trailingslashit(get_option('home'));
+		$check_title = $this->_post_title = $this->_post_title ;
 		$check_url = ($this->_post_url != '') ? $this->_post_url : get_bloginfo('rss2_url');
 				
 		if ( !in_array($server,$this->already_pinged) ) {
@@ -375,7 +376,9 @@ class cbnetPingOptimizer
 			// the extendedPing format should be "blog name", "blog url", "check url" (post url), and "feed url",
 			// but it would seem as if the standard has been mixed up. It's therefore good to repeat the feed url.
 			// $this->_post_type = 2 if new post and 3 if future post
-			if ( $client->query('weblogUpdates.extendedPing', get_settings('blogname'), $home, $check_url, get_bloginfo('rss2_url')) ) { 
+			//Replaced below line to solve extended ping problem
+			//if ( $client->query('weblogUpdates.extendedPing', get_settings('blogname'), $home, $check_url, get_bloginfo('rss2_url')) ) { 
+			if ( $client->query('weblogUpdates.extendedPing', $check_title, $check_url, get_bloginfo('rss2_url')) ) { 
 				$this->cbnetpoLog($server." was successfully pinged (extended format)", $this->_post_type, $this->_post_title);
 			} else {
 				if ( $client->query('weblogUpdates.ping', get_settings('blogname'), $home) ) {

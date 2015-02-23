@@ -11,19 +11,23 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Save your wordpress blog from getting tagged as ping spammer. This plugin is a fork of the cbnet Ping Optimizer plugin.
 == Description ==
+[**Best WordPress Ping Optimizer Plugin**](http://onlinewebapplication.com/wordpress-ping-optimizer/)
 Do you know your WordPress blog pings unnecessarily every time you edit a post? Think how many times you click on "Save and Continue Editing" or "Save" button. Your blog will ping unnecessarily that many times you click on those buttons.
 
 Save your blog from getting tagged as ping spammer by installing this  [plugin](http://onlinewebapplication.com/wordpress-ping-optimizer/).
-The list of ping service you can use for the better performance find [here](http://onlinewebapplication.com/wordpress-ping-optimizer/#comment-38368).
+The complete list of ping service you can use for the better performance find [here](http://onlinewebapplication.com/wordpress-ping-optimizer/#comment-38368).
+
+> #### **Support and Usage**
+
+> * [USAGE: Know How to use WordPress Ping Optimizer Plugin](http://onlinewebapplication.com/wordpress-ping-optimizer/)
+> * [SUPPORT FORUM: Ask for support](http://onlinewebapplication.com/wordpress-ping-optimizer/)
+> 
+
 
 **After you install [Wordpress Ping Optimizer](http://onlinewebapplication.com/wordpress-ping-optimizer/):**
-
 * When you create a new post, your blog will ping and notify all the ping services that it has been updated. This encourages search engines and different blog directories/services to index your updated blog properly.
-
 * When you edit an existing post, it won't send any unnecessary ping to ping services and saves your blog from getting banned by such services.
-
 * When you post a future post by editing the time stamp, it will ping only when your post appears in future. It won't unnecessarily ping many times when you schedule posts as WordPress does by default.
-
 * Works on all modern browsers.
 * Work With all the cache plugins.
 * Simple configuration.
@@ -67,6 +71,9 @@ You can check Screen Shots on plugin website URL :<br />
 [WordPress Ping Optimizer](http://onlinewebapplication.com/wordpress-ping-optimizer/)<br />
 
 == Changelog ==
+= 2.34.7 =
+* Solves extended ping problem, check more details [here](http://onlinewebapplication.com/wordpress-ping-optimizer/).
+
 = 2.34.6 =
 * Compatible with wordpress 4.1 Check more details [here](http://onlinewebapplication.com/wordpress-ping-optimizer/).
 
@@ -110,6 +117,9 @@ You can check Screen Shots on plugin website URL :<br />
 * Compatible with 3.4.1
 
 == Upgrade Notice ==
+= 2.34.7 =
+Solves extended ping problem
+
 = 2.34.6 =
 Compatible with wordpress 4.1
 
