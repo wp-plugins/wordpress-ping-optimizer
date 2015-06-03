@@ -36,7 +36,7 @@ function cbnetpoShowHide(Div,Img) {
  </p>
  </form>
  <h2>WordPress ping Optimizer Needs Your Support</h2> 
-It is hard to continue development and support for this free plugin without contributions from users like you. If you enjoy using WP Lighbox 2 and find it useful, please consider <a href="http://onlinewebapplication.com/onlinewebapplication-com-donation/" target="_blank">making a donation</a>. Your donation will help encourage and support the plugin's continued development and better user support.
+It is hard to continue development and support for this free plugin without contributions from users like you. If you enjoy using WordPress ping Optimizer and find it useful, please consider <a href="http://onlinewebapplication.com/onlinewebapplication-com-donation/" target="_blank">making a donation</a>. Your donation will help encourage and support the plugin's continued development and better user support. Remember some part of our donation will go for charity.
 	
  <?php if ( cbnetpo_LOG == true ) { ?>
  <h3><?php _e('Ping Log', 'cbnetpo'); ?></h3>
